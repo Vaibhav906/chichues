@@ -81,6 +81,7 @@
     padding:6px;
     border-radius:999px;
   }
+
   .nav-links a{
     padding:9px 20px;
     font-size:14px;
@@ -572,6 +573,23 @@
   /* ---------- RESPONSIVE ---------- */
   @media (max-width:900px){
     .nav-links{ display:none; }
+    .nav-links.open{
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  top:100%;
+  left:0;
+  right:0;
+  background:var(--peach);
+  padding:16px 24px;
+  gap:4px;
+  border-radius:0 0 20px 20px;
+  box-shadow:0 12px 24px rgba(58,51,46,0.15);
+}
+.nav-links.open a{
+  padding:14px 20px;
+  border-radius:12px;
+}
     .hamburger{ display:flex; }
     .hero-frame-inner{ padding:0 24px; }
     .hero-frame img{ height:320px; margin-top:-48px; margin-bottom:0; }
